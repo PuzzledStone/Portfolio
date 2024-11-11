@@ -6,9 +6,11 @@ export default function Home() {
     return (
         <>
             <Nav />
-            <div className='h-[80vh]'> 
+           
             <Introduction/>
-            </div>
+            <ProjectCards/>
+            <ProjectCards/>
+            <ProjectCards/>
             <ProjectCards/>
         </>
     );
