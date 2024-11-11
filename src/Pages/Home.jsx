@@ -5,13 +5,12 @@ import { ProjectCards } from '../components/projects/ProjectCard';
 export default function Home() {
     return (
         <>
-            <Nav />
-           
-            <Introduction/>
-            <ProjectCards/>
-            <ProjectCards/>
-            <ProjectCards/>
-            <ProjectCards/>
+            <div>
+                <Nav />
+                
+                   <Introduction/>
+                   <ProjectCards/>
+            </div>
         </>
     );
 }
