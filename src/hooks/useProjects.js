@@ -30,7 +30,7 @@ export function useProjects() {
       title: "Dane",
       description: "Dane is a prototype of a web application that connects restaurants with customers, allowing them to explore menus and place orders.",
       image: "/imgs/projects/dane.jpg",
-      techStack: ["React", "Laravel", "PHP", "Node.js", "HeidiSQL"],
+      techStack: ["Laravel", "PHP", "HeidiSQL"],
       githubLink: "https://github.com/ianmiranda/project3",
       liveLink: "https://project3.com"
     },
