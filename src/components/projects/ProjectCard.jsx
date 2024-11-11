@@ -9,12 +9,14 @@ export function ProjectCards() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((project, index) => (
           <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden p-6 flex flex-col">
-            <img
-              src={project.image}
-              alt={project.title}
-              className="w-full h-48 object-cover rounded-lg mb-4"
-            />
-            <div className="flex-grow">
+            <div className="relative w-full h-48">
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-full object-cover rounded-lg"
+              />
+            </div>
+            <div className="flex-grow mt-4">
               <h3 className="text-2xl font-bold text-gray-800">{project.title}</h3>
               <p className="mt-2 text-gray-600">{project.description}</p>
               <div className="mt-4 flex flex-wrap gap-2">
@@ -51,4 +53,5 @@ export function ProjectCards() {
       </div>
     </div>
   );
+  
 }

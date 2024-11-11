@@ -12,7 +12,7 @@ export function useProjects() {
     },
     {
       title: "D2ARMY",
-      description: "Fully functional web application to consume the Bunige.net API and display gear from the game Destiny 2",
+      description: "D2ARMy its a fully functional web application designed to help Destiny 2 players search, filter, and experiment with different gear configurations in the game.",
       image: "/imgs/projects/project2.jpg",
       techStack: [".NET", "C#", "Vercel"],
       githubLink: "https://github.com/ianmiranda/project2",
@@ -36,7 +36,7 @@ export function useProjects() {
     },
     {
       title: "Portfolio",
-      description: "Este es mi portafolio en línea, donde presento mis proyectos, habilidades y experiencia como desarrollador",
+      description: "This is my personal online portfolio, where I showcase my projects, skills, and experience as a web developer. My goal is to present the work I’ve done.",
       image: "/imgs/projects/project3.jpg",
       techStack: ["React", "Netlify", "JavaScript"],
       githubLink: "https://github.com/ianmiranda/project3",
