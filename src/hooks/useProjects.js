@@ -5,7 +5,7 @@ export function useProjects() {
     {
       title: "Attimo",
       description: "Web prototype of a collaboration platform designed to manage tasks, calendars and communication between student and teacher",
-      image: "/imgs/projects/project1.jpg",
+      image: "/imgs/projects/attimo.jpg",
       techStack: ["React", "Laravel", "PHP", "Node.js", "HeidiSQL"],
       githubLink: "https://github.com/ianmiranda/project1",
       liveLink: "https://project1.com"
@@ -21,7 +21,7 @@ export function useProjects() {
     {
       title: "TuLook",
       description: "TuLook is a platform that connects stylists and barbers with clients. Professionals can create profiles, offer their services and manage bookings, while clients can explore options, view availability and schedule appointments directly.",
-      image: "/imgs/projects/project3.jpg",
+      image: "/imgs/projects/tulook.jpg",
       techStack: ["React", "Laravel", "PHP", "Node.js", "Vercel"],
       githubLink: "https://github.com/ianmiranda/project3",
       liveLink: "https://tulook.vercel.app/"
@@ -29,7 +29,7 @@ export function useProjects() {
     {
       title: "Dane",
       description: "Dane is a prototype of a web application that connects restaurants with customers, allowing them to explore menus and place orders.",
-      image: "/imgs/projects/project3.jpg",
+      image: "/imgs/projects/dane.jpg",
       techStack: ["React", "Laravel", "PHP", "Node.js", "HeidiSQL"],
       githubLink: "https://github.com/ianmiranda/project3",
       liveLink: "https://project3.com"
@@ -37,7 +37,7 @@ export function useProjects() {
     {
       title: "Portfolio",
       description: "This is my personal online portfolio, where I showcase my projects, skills, and experience as a web developer. My goal is to present the work I’ve done.",
-      image: "/imgs/projects/project3.jpg",
+      image: "/imgs/projects/portfolio.jpg",
       techStack: ["React", "Netlify", "JavaScript"],
       githubLink: "https://github.com/ianmiranda/project3",
       liveLink: "https://project3.com"

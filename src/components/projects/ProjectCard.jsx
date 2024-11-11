@@ -9,7 +9,7 @@ export function ProjectCards() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((project, index) => (
           <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden p-6 flex flex-col">
-            <div className="relative w-full h-48">
+            <div className="relative w-full h-96">
               <img
                 src={project.image}
                 alt={project.title}
