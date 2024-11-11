@@ -10,7 +10,7 @@ export function AboutMe() {
               <div className="flex-grow border-t border-light-blue"></div>
             </div>
             <div className="flex-1 text-lg text-white mx-auto mt-16">
-              <p>I'm a passionate backend developer with a strong foundation in web and application development. My focus is on building scalable, performant, and secure systems. I've worked with technologies like Node.js, Python, React, and MySQL, and I'm always looking to optimize and improve the code I work with.</p>
+              <p>I'm a passionate backend developer with a strong foundation in web and application development.<br /> My focus is on building scalable, performant, and secure systems. I've worked with technologies like Node.js, Python, React, and MySQL, and I'm always looking to optimize and improve the code I work with.</p>
             </div>
           </div>
   
@@ -32,7 +32,7 @@ export function AboutMe() {
               <div className="flex-grow border-t border-light-blue"></div>
             </div>
             <div className="flex-1 text-lg text-white mx-auto mt-16">
-              <p>Outside of coding, I am deeply interested in backend architecture, system optimization, and experimenting with new technologies. I love staying up-to-date with the latest trends in server-side development, cloud infrastructure, and software performance.</p>
+              <p>Outside of coding, I am deeply interested in backend architecture, system optimization, and experimenting with new technologies. <br />I love staying up-to-date with the latest trends in server-side development, cloud infrastructure, and software performance.</p>
               <p className="mt-4">I am passionate about creating efficient, secure, and scalable systems. I enjoy collaborating with other developers to solve complex problems and continuously improve the quality of the code I write.</p>
             </div>
           </div>
