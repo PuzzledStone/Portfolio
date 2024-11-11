@@ -11,7 +11,7 @@ export function Skills() {
             <div className="flex-1 text-lg text-white mx-auto mt-16">
               <p>Here are some of the technologies I have worked with and have experience in:</p>
             </div>
-            <div className="grid grid-cols-5 gap-8 mt-8 w-full px-4 sm:px-0 mb-8">
+            <div className="grid grid-cols-5 gap-8 mt-4 w-full px-4 sm:px-0 mb-8">
                 <div className="flex flex-col items-center">
                     <div className="w-[80px] h-[80px] flex items-center justify-center">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" className="w-[40px] h-[40px] object-contain" />
