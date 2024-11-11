@@ -22,7 +22,7 @@ export function Introduction() {
 
 
     return (
-        <div className="flex items-center text-white w-full justify-center mt-6 gap-0 h-[90vh]">
+        <div id="home" className="flex items-center text-white w-full justify-center mt-6 gap-0 h-[90vh]">
           <div className="grid grid-cols-1 md:grid-cols-2 w-full max-w-6xl space-y-6 md:space-y-0">
             <div className="flex flex-col text-center justify-center w-full space-y-6 py-4 px-6 md:px-16 items-center">
               <div className="space-y-2">

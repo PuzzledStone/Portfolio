@@ -4,7 +4,7 @@ export function ProjectCards() {
   const { projects } = useProjects(); 
 
   return (
-    <div className="px-4 py-8">
+    <div  id="projects" className="px-4 py-8">
       <h2 className="text-center text-3xl font-bold mb-10 text-white">My Projects</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((project, index) => (

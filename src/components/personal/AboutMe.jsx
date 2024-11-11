@@ -1,6 +1,6 @@
 export function AboutMe() {
     return (
-      <div className="flex items-center justify-center bg-gray-900  min-h-[90vh] py-8 px-6 md:px-8">
+      <div id="about" className="flex items-center justify-center bg-gray-900  min-h-[90vh] py-8 px-6 md:px-8">
         <div className="flex flex-col w-auto max-w-6xl mx-auto text-center space-y-16 p-5">
 
           <div className="relative flex flex-col items-center justify-between gap-8">

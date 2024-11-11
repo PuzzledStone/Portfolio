@@ -1,6 +1,6 @@
 export function Skills() {
     return (
-      <div className="flex items-center justify-center min-h-[90vh] bg-gray-900 py-6 px-4 md:px-16">
+      <div id="skills" className="flex items-center justify-center min-h-[90vh] bg-gray-900 py-6 px-4 md:px-16">
         <div className="flex flex-col w-auto max-w-6xl mx-auto text-center space-y-16">
           <div className="relative flex flex-col items-center justify-between gap-8">
             <div className="absolute top-0 inset-x-0 flex items-center justify-center">
