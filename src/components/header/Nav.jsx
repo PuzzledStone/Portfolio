@@ -23,7 +23,6 @@ export function Nav() {
           <ul className={`sm:hidden absolute top-15 left-0 w-full flex flex-col gap-2    bg-dark-blue text-white bg-opacity-100 p-4 transition-all duration-500 ease-in-out transform ${isOpen ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-full"}`}style={{ zIndex: isOpen ? "30" : "-1" }} >
             <li><a className="duration-300 hover:text-light-blue" href="#">Home</a></li>
             <li><a className="duration-300 hover:text-light-blue" href="#">About</a></li>
-            <li><a className="duration-300 hover:text-light-blue" href="#">Contact</a></li>
             <li><a className="duration-300 hover:text-light-blue" href="#">Skills</a></li>
             <li><a className="duration-300 hover:text-light-blue" href="#">Projects</a></li>
           </ul>
@@ -32,7 +31,6 @@ export function Nav() {
           <ul className="sm:flex sm:flex-row hidden text-white text-xl p-6 justify-between w-full">
             <li><a className="duration-300 hover:text-light-blue" href="#">Home</a></li>
             <li><a className="duration-300 hover:text-light-blue" href="#">About</a></li>
-            <li><a className="duration-300 hover:text-light-blue" href="#">Contact</a></li>
             <li><a className="duration-300 hover:text-light-blue" href="#">Skills</a></li>
             <li><a className="duration-300 hover:text-light-blue" href="#">Projects</a></li>
           </ul>
