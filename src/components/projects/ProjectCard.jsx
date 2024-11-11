@@ -33,7 +33,7 @@ export function ProjectCards() {
                 href={project.githubLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-500 hover:text-blue-700"
+                className="border-2 border-black text-black hover:bg-black hover:text-white px-4 py-2 rounded-md transition-colors duration-300"
               >
                 GitHub
               </a>
@@ -41,7 +41,7 @@ export function ProjectCards() {
                 href={project.liveLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-green-500 hover:text-green-700"
+                className="border-2 border-light-blue text-light-blue hover:bg-light-blue hover:text-white px-4 py-2 rounded-md transition-colors duration-300"
               >
                 Live Demo
               </a>
@@ -52,4 +52,3 @@ export function ProjectCards() {
     </div>
   );
 }
-  
