@@ -23,7 +23,7 @@ export function useProjects() {
       description: "TuLook is a platform that connects stylists and barbers with clients. Professionals can create profiles, offer their services and manage bookings, while clients can explore options, view availability and schedule appointments directly.",
       image: "/imgs/projects/tulook.jpg",
       techStack: ["React", "Laravel", "PHP", "Node.js", "Vercel"],
-      githubLink: "https://github.com/ianmiranda/project3",
+      githubLink: "https://github.com/Encanto-ITM/TuLook-Desarrollo",
       liveLink: "https://tulook.vercel.app/"
     },
     {
@@ -31,16 +31,14 @@ export function useProjects() {
       description: "Dane is a prototype of a web application that connects restaurants with customers, allowing them to explore menus and place orders.",
       image: "/imgs/projects/dane.jpg",
       techStack: ["Laravel", "PHP", "HeidiSQL"],
-      githubLink: "https://github.com/ianmiranda/project3",
-      liveLink: "https://project3.com"
+      githubLink: "https://github.com/PuzzledStone/DANE-Backend",
     },
     {
       title: "Portfolio",
       description: "This is my personal online portfolio, where I showcase my projects, skills, and experience as a web developer. My goal is to present the work I’ve done.",
       image: "/imgs/projects/portfolio.jpg",
       techStack: ["React", "Netlify", "JavaScript"],
-      githubLink: "https://github.com/ianmiranda/project3",
-      liveLink: "https://project3.com"
+      githubLink: "https://github.com/PuzzledStone/Portfolio",
     }
   ]);
 

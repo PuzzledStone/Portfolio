@@ -39,6 +39,7 @@ export function ProjectCards() {
               >
                 GitHub
               </a>
+              {project.liveLink && (
               <a
                 href={project.liveLink}
                 target="_blank"
@@ -47,6 +48,7 @@ export function ProjectCards() {
               >
                 Live Demo
               </a>
+            )}
             </div>
           </div>
         ))}
