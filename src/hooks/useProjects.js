@@ -7,12 +7,12 @@ export function useProjects() {
       description: "Web prototype of a collaboration platform designed to manage tasks, calendars and communication between student and teacher",
       image: "/imgs/projects/attimo.jpg",
       techStack: ["React", "Laravel", "PHP", "Node.js", "HeidiSQL"],
-      githubLink: "https://github.com/ianmiranda/project1",
+      githubLink: "https://github.com/PuzzledStone/Attimo-Frontend",
       liveLink: "https://project1.com"
     },
     {
       title: "D2ARMY",
-      description: "D2ARMy its a fully functional web application designed to help Destiny 2 players search, filter, and experiment with different gear configurations in the game.",
+      description: "D2ARMY its a fully functional web application designed to help Destiny 2 players search, filter, and experiment with different gear configurations in the game.",
       image: "/imgs/projects/project2.jpg",
       techStack: [".NET", "C#", "Vercel"],
       githubLink: "https://github.com/ianmiranda/project2",
