@@ -133,6 +133,24 @@ export function Skills() {
                     </div>
                     <p className="text-white">CSS</p>
                 </div>
+                <div className="flex flex-col items-center">
+                    <div className="w-[80px] h-[80px] flex items-center justify-center">
+                         <img src="https://devicon-website.vercel.app/api/oracle/original.svg" alt="ORACLE" className="w-[40px] h-[40px] object-contain" />
+                    </div>
+                    <p className="text-white">Oracle</p>
+                </div>
+                <div className="flex flex-col items-center">
+                    <div className="w-[80px] h-[80px] flex items-center justify-center">
+                         <img src="https://devicon-website.vercel.app/api/amazonwebservices/plain-wordmark.svg" alt="AWS" className="w-[40px] h-[40px] object-contain" />
+                    </div>
+                    <p className="text-white">AWS</p>
+                </div>
+                <div className="flex flex-col items-center">
+                    <div className="w-[80px] h-[80px] flex items-center justify-center">
+                         <img src="https://devicon-website.vercel.app/api/wordpress/original.svg" alt="Wordpress" className="w-[40px] h-[40px] object-contain" />
+                    </div>
+                    <p className="text-white">Wordpress</p>
+                </div>
             </div>
           </div>
         </div>
