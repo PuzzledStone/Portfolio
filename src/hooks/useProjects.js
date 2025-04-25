@@ -15,8 +15,8 @@ export function useProjects() {
       description: "2D arcade-style game where the player controls a spaceship and must avoid falling meteors. Implemented collision detection and points using object-oriented programming.",
       image: "/imgs/projects/space-dodge.png",
       techStack: ["Java", "JDK", "NetBeans IDE", "Maven"],
-      githubLink: "https://github.com/",
-      DownloadLink: "/files/Space-Dodge.jar"
+      DownloadLink: "/files/Space-Dodge.jar",
+      DownloadReadme: "/files/SpaceDodge-README.txt"
     },
     {
       title: "TuLook",
