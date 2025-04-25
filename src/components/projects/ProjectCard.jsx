@@ -49,6 +49,17 @@ export function ProjectCards() {
                 Live Demo
               </a>
             )}
+             {project.DownloadLink && (
+              <a
+                href={project.liveLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                download={true}
+                className="border-2 border-light-blue text-light-blue hover:bg-light-blue hover:text-white px-4 py-2 rounded-md transition-colors duration-300"
+              >
+                Download Game
+              </a>
+            )}
             </div>
           </div>
         ))}
