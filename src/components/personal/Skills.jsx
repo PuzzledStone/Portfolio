@@ -151,6 +151,18 @@ export function Skills() {
                     </div>
                     <p className="text-white">Wordpress</p>
                 </div>
+                <div className="flex flex-col items-center">
+                    <div className="w-[80px] h-[80px] flex items-center justify-center">
+                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="C#" className="w-[40px] h-[40px] object-contain" />
+                    </div>
+                    <p className="text-white">C#</p>
+                </div>
+                <div className="flex flex-col items-center">
+                    <div className="w-[80px] h-[80px] flex items-center justify-center">
+                         <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Apache_NetBeans_Logo.svg" alt="Netbeans" className="w-[40px] h-[40px] object-contain" />
+                    </div>
+                    <p className="text-white">NetBeans</p>
+                </div>
             </div>
           </div>
         </div>

@@ -11,7 +11,7 @@ export function useProjects() {
       liveLink: "https://attimo-frontend.vercel.app/login"
     },
     {
-      title: "Space-Dodge",
+      title: "Space-Dodge - PC",
       description: "2D arcade-style game where the player controls a spaceship and must avoid falling meteors. Implemented collision detection and points using object-oriented programming.",
       image: "/imgs/projects/space-dodge.png",
       techStack: ["Java", "JDK", "NetBeans IDE", "Maven"],
