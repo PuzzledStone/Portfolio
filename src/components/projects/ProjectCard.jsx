@@ -57,7 +57,7 @@ export function ProjectCards() {
                 download={true}
                 className="border-2 border-light-blue text-light-blue hover:bg-light-blue hover:text-white px-4 py-2 rounded-md transition-colors duration-300"
               >
-                Download Game
+                Download
               </a>
               
             )}
@@ -69,7 +69,7 @@ export function ProjectCards() {
                 download={true}
                 className="border-2 border-light-blue text-light-blue hover:bg-light-blue hover:text-white px-4 py-2 rounded-md transition-colors duration-300"
               >
-               Read Me
+               ReadMe
               </a>
               
             )}
