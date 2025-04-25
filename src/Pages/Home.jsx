@@ -4,6 +4,7 @@ import { Introduction } from '../components/header/Introduction';
 import { ProjectCards } from '../components/projects/ProjectCard';
 import { AboutMe } from '../components/personal/AboutMe';
 import { Skills } from '../components/personal/Skills';
+import { Footer } from '../components/footer/Footer';   
 export default function Home() {
     return (
         <>
@@ -13,6 +14,7 @@ export default function Home() {
                    <AboutMe/>
                    <ProjectCards/>
                    <Skills/>
+                   <Footer/>
             </div>
         </>
     );

@@ -5,7 +5,7 @@ export function Introduction() {
     }
 
     const redirectLinkedin = () => {
-        window.open('https://linkedin.com/in/ianmiranda', '_blank');
+        window.open('https://www.linkedin.com/in/ian-miranda-castell%C3%B3n-3385ab2a2/', '_blank');
     }
 
     const redirectGithub = () => {
