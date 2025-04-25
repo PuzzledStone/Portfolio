@@ -51,7 +51,7 @@ export function ProjectCards() {
             )}
              {project.DownloadLink && (
               <a
-                href={project.liveLink}
+                href={project.DownloadLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 download={true}
