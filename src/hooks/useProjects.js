@@ -10,14 +10,13 @@ export function useProjects() {
       githubLink: "https://github.com/PuzzledStone/Attimo-Frontend",
       liveLink: "https://attimo-frontend.vercel.app/login"
     },
-    /*{
-      title: "D2ARMY",
-      description: "D2ARMY its a fully functional web application designed to help Destiny 2 players search, filter, and experiment with different gear configurations in the game.",
-      image: "/imgs/projects/project2.jpg",
-      techStack: [".NET", "C#", "Vercel"],
-      githubLink: "https://github.com/ianmiranda/project2",
+    {
+      title: "Space-Dodge",
+      description: "2D arcade-style game where the player controls a spaceship and must avoid falling meteors. Implemented collision detection and points using object-oriented programming.",
+      image: "/imgs/projects/space-dodge.png",
+      techStack: ["Java", "JDK", "NetBeans IDE", "Maven"],
       liveLink: "https://project2.com"
-    },*/
+    },
     {
       title: "TuLook",
       description: "TuLook is a platform that connects stylists and barbers with clients. Professionals can create profiles, offer their services and manage bookings, while clients can explore options, view availability and schedule appointments directly.",
