@@ -143,7 +143,7 @@ export function Skills() {
                     <div className="w-[80px] h-[80px] flex items-center justify-center">
                          <img src="https://devicon-website.vercel.app/api/amazonwebservices/plain-wordmark.svg" alt="AWS" className="w-[40px] h-[40px] object-contain" />
                     </div>
-                    <p className="text-white">AWS</p>
+                    <p className="text-white">AWS(EC2)</p>
                 </div>
                 <div className="flex flex-col items-center">
                     <div className="w-[80px] h-[80px] flex items-center justify-center">

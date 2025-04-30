@@ -20,6 +20,13 @@ export function useProjects() {
       DownloadReadme: "/files/SpaceDodge-README.txt"
     },
     {
+      title: "Beach SA",
+      description: "Web prototype for a hotel management platform. Designed and developed the API and database to handle client registration, room reservations, and service scheduling.",
+      image: "/imgs/projects/Beach-SA.png",
+      techStack: [".NET", "C#", "SQL Server"],
+      githubLink: "https://github.com/PuzzledStone/Beach.SA.git",
+    },
+    {
       title: "TuLook",
       description: "TuLook is a platform that connects stylists and barbers with clients. Professionals can create profiles, offer their services and manage bookings, while clients can explore options, view availability and schedule appointments directly.",
       image: "/imgs/projects/tulook.jpg",

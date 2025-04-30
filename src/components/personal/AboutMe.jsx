@@ -10,7 +10,7 @@ export function AboutMe() {
               <div className="flex-grow border-t border-light-blue"></div>
             </div>
             <div className="flex-1 text-lg text-white mx-auto mt-16">
-              <p>I'm a passionate backend developer with a strong foundation in web and application development.<br /> My focus is on building scalable, performant, and secure systems. I've worked with technologies like Node.js, Oracle, Java, React, and MySQL, and I'm always looking to optimize and improve the code I work with.</p>
+              <p>I'm a passionate software developer with a strong foundation in web and application development.<br /> My focus is on building scalable, performant, and secure systems. I've worked with technologies like Node.js, ReactJS, Java, C#, .NET, Oracle and MySQL, and I'm always looking to optimize and improve the code I work with.</p>
             </div>
           </div>
   
