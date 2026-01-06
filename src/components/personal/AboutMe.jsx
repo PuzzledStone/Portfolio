@@ -10,7 +10,10 @@ export function AboutMe() {
               <div className="flex-grow border-t border-light-blue"></div>
             </div>
             <div className="flex-1 text-lg text-white mx-auto mt-16">
-              <p>I'm a passionate software developer with a strong foundation in web and application development.<br /> My focus is on building scalable, performant, and secure systems. I've worked with technologies like Node.js, ReactJS, Java, C#, .NET, Oracle and MySQL, and I'm always looking to optimize and improve the code I work with.</p>
+              <p>
+                I'm a passionate software developer specializing in <strong>C#/.NET</strong> and <strong>React</strong>, focused on building scalable, high-performance, and secure applications.<br />
+                I have strong experience across web and application development, including work with SQL Server, Oracle, and MySQL, and I’m always looking for ways to optimize systems and improve code quality.
+              </p>
             </div>
           </div>
   

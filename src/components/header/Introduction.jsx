@@ -31,7 +31,7 @@ export function Introduction() {
                 </h1>
                 <h2 className="font-bold text-2xl sm:text-3xl whitespace-nowrap">
                   <span className="block sm:inline">Passionate</span>
-                  <span className="block sm:inline"> Software Developer</span>
+                  <span className="block sm:inline">Software Engineer</span>
                 </h2>
               </div>
               <div className="flex gap-8 justify-center mt-6">

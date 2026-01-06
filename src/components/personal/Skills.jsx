@@ -1,172 +1,81 @@
 export function Skills() {
     return (
-      <div id="skills" className="flex items-center justify-center min-h-[90vh] bg-gray-900 py-12 px-4 md:px-16">
-        <div className="flex flex-col w-auto max-w-6xl mx-auto text-center space-y-16">
-          <div className="relative flex flex-col items-center justify-between gap-8">
-            <div className="absolute top-0 inset-x-0 flex items-center justify-center">
-              <div className="flex-grow border-t border-light-blue"></div>
-                <span className="text-white text-2xl mx-4">Skills</span>
-              <div className="flex-grow border-t border-light-blue"></div>
-            </div>
-            <div className="flex-1 text-lg text-white mx-auto mt-16">
-              <p>Here are some of the technologies I have worked with and have experience in:</p>
-            </div>
-            <div className="grid grid-cols-5 gap-8 mt-4 w-full px-4 sm:px-0 mb-8">
-                <div className="flex flex-col items-center">
-                    <div className="w-[80px] h-[80px] flex items-center justify-center">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" className="w-[40px] h-[40px] object-contain" />
+        <div id="skills" className="flex items-center justify-center min-h-[90vh] bg-gray-900 py-12 px-4 md:px-16">
+            <div className="flex flex-col w-auto max-w-6xl mx-auto text-center space-y-16">
+                <div className="relative flex flex-col items-center justify-between gap-8">
+                    <div className="absolute top-0 inset-x-0 flex items-center justify-center">
+                        <div className="flex-grow border-t border-light-blue"></div>
+                        <span className="text-white text-2xl mx-4">Skills</span>
+                        <div className="flex-grow border-t border-light-blue"></div>
                     </div>
-                    <p className="text-white">React</p>
-                </div>
-                <div className="flex flex-col items-center">
-                    <div className="w-[80px] h-[80px] flex items-center justify-center">
-                    
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-[40px] h-[40px] object-contain" />
+                    <div className="flex-1 text-lg text-white mx-auto mt-16">
+                        <p>Here are some of the technologies I have worked with and have experience in:</p>
                     </div>
-                    <p className="text-white">JavaScript</p>
-                </div>
-                <div className="flex flex-col items-center">
-                    <div className="w-[80px] h-[80px] flex items-center justify-center">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP" className="w-[40px] h-[40px] object-contain" />
+
+                    <div className="w-full px-4 sm:px-0 mb-8 space-y-12 mt-4">
+                        <section>
+                            <h3 className="text-white text-xl mb-4">Frontend</h3>
+                            <div className="grid grid-cols-5 gap-8">
+                                <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" label="React" />
+                                <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" label="JavaScript" />
+                                <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML" label="HTML" />
+                                <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" label="CSS" />
+                                <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" label="Bootstrap" />
+                                <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" alt="SASS" label="SASS" />
+                                <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" alt="ViteJS" label="ViteJS" />
+                            </div>
+                        </section>
+
+                        <section>
+                            <h3 className="text-white text-xl mb-4">Backend</h3>
+                            <div className="grid grid-cols-5 gap-8">
+                                <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js" label="Node.js" />
+                                <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP" label="PHP" />
+                                <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" alt="Laravel" label="Laravel" />
+                                <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java" label="Java" />
+                                <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg" alt=".NET" label=".NET" />
+                                <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" alt="C#" label="C#" />
+                                <SkillItem src="https://devicon-website.vercel.app/api/wordpress/original.svg" alt="Wordpress" label="Wordpress" />
+                            </div>
+                        </section>
+
+                        <section>
+                            <h3 className="text-white text-xl mb-4">Databases</h3>
+                            <div className="grid grid-cols-5 gap-8">
+                                <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL" label="MySQL" />
+                                <SkillItem src="https://devicon-website.vercel.app/api/oracle/original.svg" alt="Oracle" label="Oracle" />
+                                <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" alt="HeidiSQL" label="HeidiSQL" />
+                            </div>
+                        </section>
+
+                        <section>
+                            <h3 className="text-white text-xl mb-4">DevOps / Tools</h3>
+                            <div className="grid grid-cols-5 gap-8">
+                                <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original.svg" alt="Netlify" label="Netlify" />
+                                <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg" alt="Vercel" label="Vercel" />
+                                <SkillItem src="https://devicon-website.vercel.app/api/amazonwebservices/plain-wordmark.svg" alt="AWS" label="AWS/Azure" />
+                                <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" label="Git" />
+                                <SkillItem src="/imgs/icons/github.png" alt="GitHub" label="GitHub" />
+                                <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg" alt="NPM" label="NPM" />
+                                <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/composer/composer-original.svg" alt="Composer" label="Composer" />
+                                <SkillItem src="https://upload.wikimedia.org/wikipedia/commons/9/98/Apache_NetBeans_Logo.svg" alt="Netbeans" label="NetBeans" />
+                            </div>
+                        </section>
                     </div>
-                    <p className="text-white">PHP</p>
-                </div>
-                <div className="flex flex-col items-center">
-                    <div className="w-[80px] h-[80px]  flex items-center justify-center"> 
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" alt="Laravel" className="w-[40px] h-[40px] object-contain" />
-                    </div>
-                    <p className="text-white">Laravel</p>
-                </div>
-                <div className="flex flex-col items-center">
-                    <div className="w-[80px] h-[80px] flex items-center justify-center ">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js" className="w-[40px] h-[40px] object-contain" />
-                    </div>
-                    <p className="text-white">Node.js</p>
-                </div>
-                <div className="flex flex-col items-center">
-                    <div className="w-[80px] h-[80px] flex items-center justify-center"> 
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java" className="w-[40px] h-[40px] object-contain" />
-                    </div>
-                    <p className="text-white">Java</p>
-                </div>
-                <div className="flex flex-col items-center">
-                    <div className="w-[80px] h-[80px] flex items-center justify-center">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original.svg" alt="Netlify" className="w-[40px] h-[40px] object-contain" />
-                    </div>
-                    <p className="text-white">Netlify</p>
-                </div>
-                <div className="flex flex-col items-center">
-                    <div className="w-[80px] h-[80px] flex items-center justify-center">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL" className="w-[40px] h-[40px] object-contain" />
-                    </div>
-                    <p className="text-white">MySQL</p>
-                </div>
-                <div className="flex flex-col items-center">
-                    <div className="w-[80px] h-[80px] flex items-center justify-center">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" className="w-[40px] h-[40px] object-contain" />
-                    </div>
-                    <p className="text-white">Bootstrap</p>
-                </div>
-                <div className="flex flex-col items-center">
-                    <div className="w-[80px] h-[80px] flex items-center justify-center">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" alt="HeidiSQL" className="w-[40px] h-[40px] object-contain" />
-                    </div>
-                    <p className="text-white">HeidiSQL</p>
-                </div>
-                <div className="flex flex-col items-center">
-                    <div className="w-[80px] h-[80px] flex items-center justify-center">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg" alt="Vercel" className="w-[40px] h-[40px] object-contain" />
-                    </div>
-                    <p className="text-white">Vercel</p>
-                </div>
-                <div className="flex flex-col items-center">
-                    <div className="w-[80px] h-[80px] flex items-center justify-center">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" className="w-[40px] h-[40px] object-contain" />
-                    </div>
-                    <p className="text-white">Git</p>
-                </div>
-                <div className="flex flex-col items-center">
-                    <div className="w-[80px] h-[80px] flex items-center justify-center">
-                        <img src="/imgs/icons/github.png" alt="GitHub" className="w-[40px] h-[40px] object-contain" />
-                    </div>
-                    <p className="text-white">GitHub</p>
-                </div>
-                <div className="flex flex-col items-center">
-                    <div className="w-[80px] h-[80px] flex items-center justify-center">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" alt="ViteJS" className="w-[40px] h-[40px] object-contain" />
-                    </div>
-                    <p className="text-white">ViteJS</p>
-                </div>
-                <div className="flex flex-col items-center">
-                    <div className="w-[80px] h-[80px] flex items-center justify-center">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg" alt=".NET" className="w-[40px] h-[40px] object-contain" />
-                    </div>
-                    <p className="text-white">.NET</p>
-                </div>
-                <div className="flex flex-col items-center">
-                    <div className="w-[80px] h-[80px] flex items-center justify-center">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg" alt="NPM" className="w-[40px] h-[40px] object-contain" />
-                    </div>
-                    <p className="text-white">NPM</p>
-                </div>
-                <div className="flex flex-col items-center">
-                    <div className="w-[80px] h-[80px] flex items-center justify-center">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/composer/composer-original.svg" alt="Composer" className="w-[40px] h-[40px] object-contain" />
-                    </div>
-                    <p className="text-white">Composer</p>
-                </div>
-                <div className="flex flex-col items-center">
-                    <div className="w-[80px] h-[80px] flex items-center justify-center">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" alt=".NET" className="w-[40px] h-[40px] object-contain" />
-                    </div>
-                    <p className="text-white">SASS</p>
-                </div>
-                <div className="flex flex-col items-center">
-                    <div className="w-[80px] h-[80px] flex items-center justify-center">
-                         <img src="https://devicon-website.vercel.app/api/wordpress/original.svg" alt="Wordpress" className="w-[40px] h-[40px] object-contain" />
-                    </div>
-                    <p className="text-white">Wordpress</p>
-                </div>
-                <div className="flex flex-col items-center">
-                    <div className="w-[80px] h-[80px] flex items-center justify-center">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML" className="w-[40px] h-[40px] object-contain" />
-                    </div>
-                    <p className="text-white">HTML</p>
-                </div>
-                <div className="flex flex-col items-center">
-                    <div className="w-[80px] h-[80px] flex items-center justify-center">
-                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" className="w-[40px] h-[40px] object-contain" />
-                    </div>
-                    <p className="text-white">CSS</p>
-                </div>
-                <div className="flex flex-col items-center">
-                    <div className="w-[80px] h-[80px] flex items-center justify-center">
-                         <img src="https://devicon-website.vercel.app/api/oracle/original.svg" alt="ORACLE" className="w-[40px] h-[40px] object-contain" />
-                    </div>
-                    <p className="text-white">Oracle</p>
-                </div>
-                <div className="flex flex-col items-center">
-                    <div className="w-[80px] h-[80px] flex items-center justify-center">
-                         <img src="https://devicon-website.vercel.app/api/amazonwebservices/plain-wordmark.svg" alt="AWS" className="w-[40px] h-[40px] object-contain" />
-                    </div>
-                    <p className="text-white">AWS(EC2)</p>
-                </div>
-                <div className="flex flex-col items-center">
-                    <div className="w-[80px] h-[80px] flex items-center justify-center">
-                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="C#" className="w-[40px] h-[40px] object-contain" />
-                    </div>
-                    <p className="text-white">C#</p>
-                </div>
-                <div className="flex flex-col items-center">
-                    <div className="w-[80px] h-[80px] flex items-center justify-center">
-                         <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Apache_NetBeans_Logo.svg" alt="Netbeans" className="w-[40px] h-[40px] object-contain" />
-                    </div>
-                    <p className="text-white">NetBeans</p>
                 </div>
             </div>
-          </div>
         </div>
-      </div>
     );
-  }
+}
+
+function SkillItem({ src, alt, label }) {
+    return (
+        <div className="flex flex-col items-center">
+            <div className="w-[80px] h-[80px] flex items-center justify-center">
+                <img src={src} alt={alt} className="w-[40px] h-[40px] object-contain" />
+            </div>
+            <p className="text-white">{label}</p>
+        </div>
+    );
+}
   
