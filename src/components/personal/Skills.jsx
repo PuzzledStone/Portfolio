@@ -18,7 +18,7 @@ export function Skills() {
                     <div className="w-full px-4 sm:px-0 mb-8 space-y-12 mt-4">
                         <section>                           
                             <div className="mb-6">
-                                <h3 className="text-white text-xl font-semibold">Frontend</h3>
+                                <h3 className="text-white text-2xl mx-4">Frontend</h3>
                                 <div className="mt-2 h-px w-full bg-white/10" />
                             </div>
                             <SkillCarousel>
@@ -34,7 +34,7 @@ export function Skills() {
 
                         <section>
                             <div className="mb-6">
-                                <h3 className="text-white text-xl font-semibold">Backend</h3>
+                                <h3 className="text-white text-2xl mx-4">Backend</h3>
                                 <div className="mt-2 h-px w-full bg-white/10" />
                             </div>
                             <SkillCarousel>
@@ -50,11 +50,11 @@ export function Skills() {
 
                         <section>
                             <div className="mb-6">
-                                <h3 className="text-white text-xl font-semibold">Databases</h3>
+                                <h3 className="text-white text-2xl mx-4">Databases</h3>
                                 <div className="mt-2 h-px w-full bg-white/10" />
                             </div>
                             <SkillCarousel>                                         
-                                <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original-wordmark.svg" alt="Microsoft SQL Server" label="Microsoft SQL Server" />
+                                <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original-wordmark.svg" alt="SQL Server" label="SQL Server" />
                                 <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL" label="MySQL" />
                                 <SkillItem src="https://devicon-website.vercel.app/api/oracle/original.svg" alt="Oracle" label="Oracle" />
                                 <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" alt="HeidiSQL" label="HeidiSQL" />
@@ -63,7 +63,7 @@ export function Skills() {
 
                         <section>
                             <div className="mb-6">
-                                <h3 className="text-white text-xl font-semibold">DevOps / Tools</h3>
+                                <h3 className="text-white text-2xl mx-4">DevOps / Tools</h3>
                                 <div className="mt-2 h-px w-full bg-white/10" />
                             </div>
                             <SkillCarousel>

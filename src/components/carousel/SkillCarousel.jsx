@@ -1,71 +1,44 @@
-import React, { useMemo, useState } from "react";
+import React from "react";
+import { useCarousel } from "../../hooks/useCarousel.js";
 
 export function SkillCarousel({ children }) {
-  const items = useMemo(() => React.Children.toArray(children), [children]);
-
-  const visibleCount = 5; // how many show at once
-  const total = items.length;
-
-  const [index, setIndex] = useState(0);
-  const [offset, setOffset] = useState(0); // translateX
-  const [animating, setAnimating] = useState(false);
-
-  const itemWidth = 120; // adjust to match SkillItem width
-  const gap = 32;
-  const step = itemWidth + gap;
-
-  const next = () => {
-    if (animating || total <= 1) return;
-    setAnimating(true);
-    setOffset(-step);
-
-    setTimeout(() => {
-      setAnimating(false);
-      setOffset(0);
-      setIndex((prev) => (prev + 1) % total);
-    }, 350);
-  };
-
-  const prev = () => {
-    if (animating || total <= 1) return;
-    setAnimating(true);
-    setOffset(step);
-
-    setTimeout(() => {
-      setAnimating(false);
-      setOffset(0);
-      setIndex((prev) => (prev - 1 + total) % total);
-    }, 350);
-  };
-
-  // Build visible items (wrap around)
-  const visibleItems = [];
-  for (let i = 0; i < visibleCount; i++) {
-    visibleItems.push(items[(index + i) % total]);
-  }
+  const {
+    items,
+    current,
+    gap,
+    step,
+    itemWidth,
+    containerWidth,
+    next,
+    prev,
+  } = useCarousel(children);
 
   return (
     <div className="flex items-center justify-center gap-4">
       <button
         onClick={prev}
         aria-label="Previous"
-        className="text-white bg-gray-800/50 hover:bg-gray-700 px-3 py-1 rounded transition-colors disabled:opacity-40"
-        disabled={animating}
+        className="text-white bg-gray-800/50 hover:bg-gray-700 px-3 py-1 rounded transition-colors"
       >
         ‹
       </button>
 
-      <div className="overflow-hidden" style={{ width: "600px" }}>
+      <div className="overflow-hidden" style={{ width: `${containerWidth}px` }}>
         <div
           className="flex"
           style={{
             gap: `${gap}px`,
-            transform: `translateX(${offset}px)`,
-            transition: animating ? "transform 350ms ease" : "none",
+            transform: `translateX(-${current * step}px)`,
+            transition: "transform 350ms ease",
+            width: "fit-content",
           }}
         >
-          {visibleItems.map((item, i) => (
-            <div key={i} className="shrink-0" style={{ width: `${itemWidth}px` }}>
+          {items.map((item, i) => (
+            <div
+              key={i}
+              className="shrink-0"
+              style={{ width: `${itemWidth}px` }}
+            >
               {item}
             </div>
           ))}
@@ -75,8 +48,7 @@ export function SkillCarousel({ children }) {
       <button
         onClick={next}
         aria-label="Next"
-        className="text-white bg-gray-800/50 hover:bg-gray-700 px-3 py-1 rounded transition-colors disabled:opacity-40"
-        disabled={animating}
+        className="text-white bg-gray-800/50 hover:bg-gray-700 px-3 py-1 rounded transition-colors"
       >
         ›
       </button>
