@@ -16,8 +16,6 @@ export function useProjects() {
       image: "/imgs/projects/space-dodge.png",
       techStack: ["Java", "JDK", "NetBeans IDE", "Maven"],
       githubLink: "https://github.com/PuzzledStone/Space-Dodge",
-      DownloadLink: "/files/Space-Dodge.jar",
-      DownloadReadme: "/files/SpaceDodge-README.txt"
     },
     {
       title: "Beach SA",

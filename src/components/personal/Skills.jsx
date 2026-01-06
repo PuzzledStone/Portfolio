@@ -1,3 +1,7 @@
+import { useRef } from 'react';
+import { SkillCarousel } from '../carousel/SkillCarousel.jsx';
+import { SkillItem } from '../carousel/SkillCarousel.jsx';
+
 export function Skills() {
     return (
         <div id="skills" className="flex items-center justify-center min-h-[90vh] bg-gray-900 py-12 px-4 md:px-16">
@@ -15,7 +19,7 @@ export function Skills() {
                     <div className="w-full px-4 sm:px-0 mb-8 space-y-12 mt-4">
                         <section>
                             <h3 className="text-white text-xl mb-4">Frontend</h3>
-                            <div className="grid grid-cols-5 gap-8">
+                            <SkillCarousel>
                                 <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" label="React" />
                                 <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" label="JavaScript" />
                                 <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML" label="HTML" />
@@ -23,12 +27,12 @@ export function Skills() {
                                 <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" label="Bootstrap" />
                                 <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" alt="SASS" label="SASS" />
                                 <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" alt="ViteJS" label="ViteJS" />
-                            </div>
+                            </SkillCarousel>
                         </section>
 
                         <section>
                             <h3 className="text-white text-xl mb-4">Backend</h3>
-                            <div className="grid grid-cols-5 gap-8">
+                            <SkillCarousel>
                                 <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js" label="Node.js" />
                                 <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP" label="PHP" />
                                 <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" alt="Laravel" label="Laravel" />
@@ -36,21 +40,21 @@ export function Skills() {
                                 <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg" alt=".NET" label=".NET" />
                                 <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" alt="C#" label="C#" />
                                 <SkillItem src="https://devicon-website.vercel.app/api/wordpress/original.svg" alt="Wordpress" label="Wordpress" />
-                            </div>
+                            </SkillCarousel>
                         </section>
 
                         <section>
                             <h3 className="text-white text-xl mb-4">Databases</h3>
-                            <div className="grid grid-cols-5 gap-8">
+                            <SkillCarousel>
                                 <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL" label="MySQL" />
                                 <SkillItem src="https://devicon-website.vercel.app/api/oracle/original.svg" alt="Oracle" label="Oracle" />
                                 <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" alt="HeidiSQL" label="HeidiSQL" />
-                            </div>
+                            </SkillCarousel>
                         </section>
 
                         <section>
                             <h3 className="text-white text-xl mb-4">DevOps / Tools</h3>
-                            <div className="grid grid-cols-5 gap-8">
+                            <SkillCarousel>
                                 <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original.svg" alt="Netlify" label="Netlify" />
                                 <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg" alt="Vercel" label="Vercel" />
                                 <SkillItem src="https://devicon-website.vercel.app/api/amazonwebservices/plain-wordmark.svg" alt="AWS" label="AWS/Azure" />
@@ -59,7 +63,7 @@ export function Skills() {
                                 <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg" alt="NPM" label="NPM" />
                                 <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/composer/composer-original.svg" alt="Composer" label="Composer" />
                                 <SkillItem src="https://upload.wikimedia.org/wikipedia/commons/9/98/Apache_NetBeans_Logo.svg" alt="Netbeans" label="NetBeans" />
-                            </div>
+                            </SkillCarousel>
                         </section>
                     </div>
                 </div>
@@ -67,15 +71,3 @@ export function Skills() {
         </div>
     );
 }
-
-function SkillItem({ src, alt, label }) {
-    return (
-        <div className="flex flex-col items-center">
-            <div className="w-[80px] h-[80px] flex items-center justify-center">
-                <img src={src} alt={alt} className="w-[40px] h-[40px] object-contain" />
-            </div>
-            <p className="text-white">{label}</p>
-        </div>
-    );
-}
-  
