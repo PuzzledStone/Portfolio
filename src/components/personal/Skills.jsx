@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { SkillCarousel } from '../carousel/SkillCarousel.jsx';
-import { SkillItem } from '../carousel/SkillCarousel.jsx';
+import { SkillItem } from '../carousel/SkillItem.jsx';
 
 export function Skills() {
     return (
