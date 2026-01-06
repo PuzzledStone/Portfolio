@@ -38,7 +38,8 @@ export function Skills() {
                                 <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" alt="Laravel" label="Laravel" />
                                 <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java" label="Java" />
                                 <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg" alt=".NET" label=".NET" />
-                                <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" alt="C#" label="C#" />
+                                <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="C#" label="C#" />
+                                <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" alt="Azure" label="Azure" />
                                 <SkillItem src="https://devicon-website.vercel.app/api/wordpress/original.svg" alt="Wordpress" label="Wordpress" />
                             </SkillCarousel>
                         </section>
