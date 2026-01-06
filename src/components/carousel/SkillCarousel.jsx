@@ -1,27 +1,85 @@
-import { useRef } from 'react';
+import React, { useMemo, useState } from "react";
 
 export function SkillCarousel({ children }) {
-    const ref = useRef(null);
-    const scroll = (dir = 1) => {
-        if (!ref.current) return;
-        const amount = Math.round(ref.current.offsetWidth * 0.7) * dir;
-        ref.current.scrollBy({ left: amount, behavior: 'smooth' });
-    };
+  const items = useMemo(() => React.Children.toArray(children), [children]);
 
-    return (
-        <div className="relative">
-            <div className="flex items-center justify-end gap-2 mb-2">
-                <button onClick={() => scroll(-1)} aria-label="Previous" className="text-white bg-gray-800/50 hover:bg-gray-700 px-3 py-1 rounded">
-                    ‹
-                </button>
-                <button onClick={() => scroll(1)} aria-label="Next" className="text-white bg-gray-800/50 hover:bg-gray-700 px-3 py-1 rounded">
-                    ›
-                </button>
+  const visibleCount = 5; // how many show at once
+  const total = items.length;
+
+  const [index, setIndex] = useState(0);
+  const [offset, setOffset] = useState(0); // translateX
+  const [animating, setAnimating] = useState(false);
+
+  const itemWidth = 120; // adjust to match SkillItem width
+  const gap = 32;
+  const step = itemWidth + gap;
+
+  const next = () => {
+    if (animating || total <= 1) return;
+    setAnimating(true);
+    setOffset(-step);
+
+    setTimeout(() => {
+      setAnimating(false);
+      setOffset(0);
+      setIndex((prev) => (prev + 1) % total);
+    }, 350);
+  };
+
+  const prev = () => {
+    if (animating || total <= 1) return;
+    setAnimating(true);
+    setOffset(step);
+
+    setTimeout(() => {
+      setAnimating(false);
+      setOffset(0);
+      setIndex((prev) => (prev - 1 + total) % total);
+    }, 350);
+  };
+
+  // Build visible items (wrap around)
+  const visibleItems = [];
+  for (let i = 0; i < visibleCount; i++) {
+    visibleItems.push(items[(index + i) % total]);
+  }
+
+  return (
+    <div className="flex items-center justify-center gap-4">
+      <button
+        onClick={prev}
+        aria-label="Previous"
+        className="text-white bg-gray-800/50 hover:bg-gray-700 px-3 py-1 rounded transition-colors disabled:opacity-40"
+        disabled={animating}
+      >
+        ‹
+      </button>
+
+      <div className="overflow-hidden" style={{ width: "600px" }}>
+        <div
+          className="flex"
+          style={{
+            gap: `${gap}px`,
+            transform: `translateX(${offset}px)`,
+            transition: animating ? "transform 350ms ease" : "none",
+          }}
+        >
+          {visibleItems.map((item, i) => (
+            <div key={i} className="shrink-0" style={{ width: `${itemWidth}px` }}>
+              {item}
             </div>
-            <div ref={ref} className="flex gap-8 overflow-x-auto scroll-smooth py-2 no-scrollbar">
-                {children}
-            </div>
+          ))}
         </div>
-    );
+      </div>
+
+      <button
+        onClick={next}
+        aria-label="Next"
+        className="text-white bg-gray-800/50 hover:bg-gray-700 px-3 py-1 rounded transition-colors disabled:opacity-40"
+        disabled={animating}
+      >
+        ›
+      </button>
+    </div>
+  );
 }
-  

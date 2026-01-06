@@ -16,8 +16,11 @@ export function Skills() {
                     </div>
 
                     <div className="w-full px-4 sm:px-0 mb-8 space-y-12 mt-4">
-                        <section>
-                            <h3 className="text-white text-xl mb-4">Frontend</h3>
+                        <section>                           
+                            <div className="mb-6">
+                                <h3 className="text-white text-xl font-semibold">Frontend</h3>
+                                <div className="mt-2 h-px w-full bg-white/10" />
+                            </div>
                             <SkillCarousel>
                                 <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" label="React" />
                                 <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" label="JavaScript" />
@@ -30,7 +33,10 @@ export function Skills() {
                         </section>
 
                         <section>
-                            <h3 className="text-white text-xl mb-4">Backend</h3>
+                            <div className="mb-6">
+                                <h3 className="text-white text-xl font-semibold">Backend</h3>
+                                <div className="mt-2 h-px w-full bg-white/10" />
+                            </div>
                             <SkillCarousel>
                                 <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js" label="Node.js" />
                                 <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP" label="PHP" />
@@ -38,14 +44,17 @@ export function Skills() {
                                 <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java" label="Java" />
                                 <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg" alt=".NET" label=".NET" />
                                 <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="C#" label="C#" />
-                                <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" alt="Azure" label="Azure" />
                                 <SkillItem src="https://devicon-website.vercel.app/api/wordpress/original.svg" alt="Wordpress" label="Wordpress" />
                             </SkillCarousel>
                         </section>
 
                         <section>
-                            <h3 className="text-white text-xl mb-4">Databases</h3>
-                            <SkillCarousel>
+                            <div className="mb-6">
+                                <h3 className="text-white text-xl font-semibold">Databases</h3>
+                                <div className="mt-2 h-px w-full bg-white/10" />
+                            </div>
+                            <SkillCarousel>                                         
+                                <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original-wordmark.svg" alt="Microsoft SQL Server" label="Microsoft SQL Server" />
                                 <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL" label="MySQL" />
                                 <SkillItem src="https://devicon-website.vercel.app/api/oracle/original.svg" alt="Oracle" label="Oracle" />
                                 <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" alt="HeidiSQL" label="HeidiSQL" />
@@ -53,11 +62,15 @@ export function Skills() {
                         </section>
 
                         <section>
-                            <h3 className="text-white text-xl mb-4">DevOps / Tools</h3>
+                            <div className="mb-6">
+                                <h3 className="text-white text-xl font-semibold">DevOps / Tools</h3>
+                                <div className="mt-2 h-px w-full bg-white/10" />
+                            </div>
                             <SkillCarousel>
                                 <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original.svg" alt="Netlify" label="Netlify" />
                                 <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg" alt="Vercel" label="Vercel" />
                                 <SkillItem src="https://devicon-website.vercel.app/api/amazonwebservices/plain-wordmark.svg" alt="AWS" label="AWS/Azure" />
+                                <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" alt="Azure" label="Azure" />
                                 <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" label="Git" />
                                 <SkillItem src="/imgs/icons/github.png" alt="GitHub" label="GitHub" />
                                 <SkillItem src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg" alt="NPM" label="NPM" />
