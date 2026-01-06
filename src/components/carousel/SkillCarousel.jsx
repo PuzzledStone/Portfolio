@@ -1,3 +1,5 @@
+import { useRef } from 'react';
+
 export function SkillCarousel({ children }) {
     const ref = useRef(null);
     const scroll = (dir = 1) => {
